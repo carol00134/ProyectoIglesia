@@ -1,0 +1,118 @@
+#Container-eventos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .cont {
+        display: flex;
+        flex-direction: column; /* Cambiamos la dirección del flexbox a columna */
+        justify-content: center;
+        align-items: center;
+        padding: 4rem;
+        background-color: rgb(34, 48, 66);
+        margin: 200px auto 0; /* Ajustamos el margen superior y los laterales */
+        text-align: center; /* Centra horizontalmente el contenido */
+        position: relative; /* Añadimos posición relativa para posicionar elementos dentro */
+    }
+
+    .texto {
+        padding: 3rem;
+        width: 100%;
+        color: @secondary-text-color;
+        font-size: 20px;
+        text-align: justify;
+
+        h2 {
+            margin-bottom: 1rem;
+            color: @secondary-text-color;
+            font-size: 24px; /* Tamaño del título */
+            font-weight: bold; /* Negrita */
+            text-transform: capitalize; /* Mayúscula en la primera letra de cada palabra */
+        }
+
+        p {
+            margin-top: 2rem;
+            font-size: 20px;
+            line-height: 1.5; /* Altura de línea */
+            color: darken(@secondary-text-color, 20%); /* Color del texto ligeramente más oscuro */
+        }
+    }
+
+    .imagenC {
+        margin-top: 20px; /* Ajustamos el margen superior para separar la imagen del texto */
+        img {
+            height: 400px;
+            width: 700px;
+        }
+    }
+}
+
+
+
+
+#eventos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        margin: 2rem auto 5rem auto;
+        padding: 1rem;
+    }
+
+    .Title-card {
+        text-align: center;
+        background-color: @secondary-text-color;
+        color: #000000;
+        margin-top: 50px;
+        margin-right: -0.5rem;
+        margin-left: -0.5rem;
+    }
+
+    .card-event {
+        background-color: @secondary-text-color;
+        margin: 40px;
+        padding: 20px;
+        box-shadow: 0px 8px 8px 0px #000000;
+        transition: transform 0.2s;
+
+        h2 {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin: 10px;
+            font-size: 14px;
+            text-align: justify;
+            text-wrap: wrap;
+            width: 280px;
+            color: @secondary-background-color;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .card-image img {
+        width: 680px;
+        height: 300px;
+        object-fit:cover;
+      }
+}
+
+.over-services {
+    margin-top: 190px;
+}
+
+.cont-services {
+    margin-top: 200px;
+    margin-bottom: 100px;
+}

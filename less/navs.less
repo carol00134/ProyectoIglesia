@@ -1,0 +1,55 @@
+
+.navbar-main {
+    /* Estilos para la barra de navegación principal */
+    margin-top: 40px; /* Ajusta el margen superior para evitar que se solape con el menú fijo */
+}
+
+li {
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4 all ease;
+
+    &:hover {
+        color: #cdcdcd;
+        transition: 0.4s all ease;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: #0051ff;
+        transform-origin: bottom right;
+        transition: transform 0.5s ease-out;
+    }
+}
+
+li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+
+    li {
+        list-style: none;
+        display: inline-block;
+        margin-left: 60px;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 13px;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="less/style.less">
+    <script src="variables.js"></script>
+    
+</head>
+
+<body>
+    <header>
+        {{> menu}}
+        <div class="navbar">
+            <!-- <img src="../proyecto/img/menu-btn.png" class="logo"> -->
+            <nav>
+                <ul>
+                    <li><a href="galeria.html">GALERIA</a></li>
+                    <li><a href="servicios.html">PROGRAMAS</a></li>
+                    <li><a href="acerca_nosotros.html">NOSOTROS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content-container">
+        <div class="content">
+            <h1 class="title">Iglesia Evangelica Vida Eterna</h1>
+            <p>La Iglesia Centro Evangelico Vida Eterna es un refugio espiritual arraigado en la comunidad, ubicado en el corazón de la ciudad. Con muchos años de historia, su arquitectura imponente y su atmósfera serena invitan a la reflexión y la devoción. Este sagrado lugar de culto Evangelico ofrece una variedad de servicios litúrgicos, programas educativos y actividades comunitarias que fomentan la participación activa de sus feligreses. Guiados por el compromiso de la Iglesia, la Iglesia se esfuerza por ser un faro de fe, solidaridad y servicio, acogiendo a todos los que buscan fortaleza espiritual y conexión con la tradición Evangelica.</p>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card card1">
+            <div class="overlay">
+                <h2>Visión</h2>
+                <p>Nuestra visión en la Iglesia Centro Evangelico Vida Eterna es ser un faro de esperanza y unidad en nuestra comunidad. Buscamos fortalecer la fe, inspirar la solidaridad y ofrecer un espacio acogedor para todos. Aspiramos a ser un refugio espiritual que ilumina vidas y construye puentes hacia el amor divino.</p>
+            </div>
+            <img src="img/akira-hojo-_86u_Y0oAaM-unsplash.jpg" alt="Imagen de la tarjeta 1">
+        </div>
+        <div class="card card2">
+            <div class="overlay">
+                <h2>Misión</h2>
+                <p>La misión de la Iglesia Centro Evangelico Vida Eterna es nutrir la fe, promover la unidad y servir a la comunidad con compasión. Buscamos inspirar la conexión espiritual, ofrecer enseñanzas católicas sólidas y trabajar juntos para construir un mundo más justo y compasivo, guiados por Cristo.</p>
+            </div>
+            <img src="img/akira-hojo-_86u_Y0oAaM-unsplash.jpg" alt="Imagen de la tarjeta 2">
+        </div>
+    </div>
+    {{> footer}}
+</body>
+</html>

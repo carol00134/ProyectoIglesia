@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contactenos</title>
+    <link rel="stylesheet" href="less/style.less">
+</head>
+
+<body>
+    <header>
+        {{> menu}}
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="galeria.html">GALERIA</a></li>
+                    <li><a href="servicios.html">PROGRAMAS</a></li>
+                    <li><a href="acerca_nosotros.html">NOSOTROS</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1>Contáctenos</h1>
+    </header>
+    <main id="main">
+        <section id="informacion" class="contenido">
+            <div class="container">
+                <h2>Información de Contacto</h2>
+                <address>
+                    <p>Estamos disponibles para responder tus preguntas. Puedes encontrarnos en:</p>
+                    <p><b>Dirección:</b> Barrio Villadela, Tegucigalpa, Francisco Morazán</p>
+                    <p><b>Teléfono:</b> 2222-5732</p>
+                    <p><b>Correo Electrónico:</b> ngi.ceve2017@gmail.com</p>
+                </address>
+            </div>
+        </section>
+        <section id="formulario" class="contenido">
+            <div class="container">
+                <h2>Formulario de Contacto</h2>
+                <form id="formulario" action="#" method="post">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre"></input>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email"></input>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="2"></textarea>
+                    </div>
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    {{> footer}}
+    <script src="contacto.js"></script>
+</body>
+
+</html>

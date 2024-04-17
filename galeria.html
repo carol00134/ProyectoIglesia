@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Fotos</title>
+    <link rel="stylesheet" href="less/style.less">
+</head>
+<body>
+    <header>
+        {{> menu}}
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="galeria.html">GALERIA</a></li>
+                    <li><a href="servicios.html">PROGRAMAS</a></li>
+                    <li><a href="acerca_nosotros.html">NOSOTROS</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1>Galería de fotos</h1>
+    </header>
+    <main id="main">
+        <section class="hero-panel">
+            <picture>
+                <source srcset="" media="(min-width:1024px)">
+                <img src="img/1.jpg" alt="">
+            </picture>
+            <br>
+            <br>
+            <br>
+            <div class="body">
+                <p style="text-align: center;">Iglesia Centro Evangelico Vida Eterna (CEVE) de Tegucigalpa, ubicada en el Barrio Villa Adela</p>
+            </div>
+        </section>
+        <br>
+        {{> gallerys}} 
+        {{> footer}} 
+    </main>
+    <script src="variables.js"></script>
+</body>
+</html>

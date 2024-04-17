@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donaciones</title>
+    <link rel="stylesheet" href="less/style.less">
+    <script src="donaciones.js"></script>
+</head>
+
+<body>
+    <header>
+        {{> menu}}
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="galeria.html">GALERIA</a></li>
+                    <li><a href="servicios.html">PROGRAMAS</a></li>
+                    <li><a href="acerca_nosotros.html">NOSOTROS</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1>Donaciones</h1>
+    </header>
+    <div class="card-donaciones-p">
+        <div class="donaciones">
+            <br>
+            <br>
+            <h3>Querida comunidad:</h3>
+            <p>Espero que este mensaje les encuentre en paz y bienestar. En estos tiempos difíciles, queremos recordar
+                la importancia de mantener viva la llama de la fe y la solidaridad que nos une como comunidad.
+            </p>
+            <p>Nuestra iglesia ha sido un faro de esperanza y apoyo para muchos de nosotros, ofreciendo consuelo
+                espiritual, orientación y un refugio en los momentos de necesidad. Sin embargo, para seguir cumpliendo
+                nuestra misión y expandiendo nuestro impacto positivo, necesitamos el apoyo generoso de nuestra amada
+                comunidad.</p>
+            <p>Hoy, les invitamos a considerar hacer una donación a la iglesia. Cada contribución, por pequeña que sea,
+                contribuye directamente a mantener las puertas abiertas, los programas en marcha y la luz de la fe
+                brillando en nuestros corazones.</p>
+            <p>La generosidad de nuestra comunidad ha sido el pilar de nuestro crecimiento y éxito a lo largo de los
+                años. Con su apoyo continuo, podemos continuar siendo un refugio espiritual y una fuerza positiva en la
+                vida de muchos.</p>
+            <br>
+            <p>Para hacer una donación, pueden dirigirse a nustra iglesia presencialmente Iglesia NGI Centro Evangélico
+                Vida Eterna de Tegucigalpa ubicada en el Barrio Villa Adela, o ponerse en contacto con nosotros para
+                obtener más detalles. Cualquier contribución, por modesta que sea, marca la diferencia puede llamarnos
+                al numero 2222-5732.</p>
+            <p>Agradecemos de antemano su generosidad y compromiso con nuestra comunidad. Que la luz de la fe y la
+                solidaridad continúe guiándonos en nuestro viaje juntos.</p>
+            <br>
+            <p>Bendiciones.</p>
+            <br>
+        </div>
+    </div>
+    </div>
+</body>
+<div class="form-donaciones">
+    <div class="card-donaciones">
+        <h2>Formulario Donaciones </h2>
+        <br>
+        <form action="formulario.html" method="post">
+            <label for="txtnombre">Nombre Completo:</label>
+            <br>
+            <input id="txtnombre" name="txtnombre" type="text" placeholder="Nombre y Apellido">
+            <br>
+            <br>
+            <label for="txtdireccion">Direccion de Correo:</label>
+            <br>
+            <input id="txtdireccion" name="txtdireccion" type="email" required placeholder="correo@gmail.com">
+            <br>
+            <br>
+            <label for="txtnumero">Numero de Telefono:</label>
+            <br>
+            <input id="txtnumero" name="txtnumero" type="text" required placeholder="89897687">
+            <br>
+            <br>
+
+            <label for="txtactual">Direccion Actual:</label>
+            <br>
+            <input id="txtactual" name="txtactual" required type="text" placeholder="Avenida 1445">
+            <br>
+            <br>
+            <label for="txtciudad">Ciudad:</label>
+            <br>
+            <input id="txtciudad" name="txtciudad" required type="text" placeholder="Tegucigalpa">
+            <br>
+            <br>
+            <fieldset>
+                <label for="cmbestado">Departamentos</label>
+                <br>
+                <select id="cmbestado" name="cmbestado">
+                    <optgroup>
+                        <option value="Tg">Atlántida</option>
+                        <option value="vll">Choluteca</option>
+                        <option value="SB">Colón</option>
+                        <option value="AT">Comayagua</option>
+                        <option value="CH">Choluteca</option>
+                        <option value="cp">Copán</option>
+                        <option value="ct">Cortés</option>
+                        <option value="ep">El Paraíso</option>
+                        <option value="fm">Francisco Morazán</option>
+                        <option value="GD">Gracias a Dios</option>
+                        <option value="in">Intibucá</option>
+                        <option value="ib">Islas de la Bahía</option>
+                        <option value="ap">La Paz</option>
+                        <option value="lp">Lempira</option>
+                        <option value="oc">Ocotepeque</option>
+                        <option value="ol">Olancho</option>
+                        <option value="st">Santa Bárbara</option>
+                        <option value="vl">Valle</option>
+                        <option value="yr">Yoro</option>
+
+                    </optgroup>
+
+                </select>
+            </fieldset>
+            <br>
+            <br>
+            <fieldset>
+                <legend> Tipo de Donación: </legend>
+                <br>
+                <label for="optpre">Efectivo</label>
+                <input type="radio" id="optpre" name="donacion" value="radio">
+                &nbsp;
+                <label for="optlice">Víveres</label>
+                <input type="radio" id="optlice" name="donacion" value="viveres" />
+                &nbsp;
+                <label for="opmaes">Ropa</label>
+                <input type="radio" id="optmaes" name="donacion" value="ropa" />
+            </fieldset>
+            <br>
+            <br>
+            <button type="submit" name="btnEnviar"> Enviar </button>
+            <br>
+            <br>
+    </div>
+</div>
+</div>
+{{> footer}}
+</body>
+
+</html>
